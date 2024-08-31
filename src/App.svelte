@@ -16,7 +16,7 @@
    
    </script>
    
-<Foo/>
+<Foo message="Foo is my Foo !"/>
    <main>
     {#if people.length >= 3}
      <div class="container">

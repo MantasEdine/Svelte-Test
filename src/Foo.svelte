@@ -1,4 +1,5 @@
 <script>
+    export const message = "default Value";
     let Foo = true;
     let isModal = true;
 </script>
@@ -6,7 +7,7 @@
     {#if Foo}
     <div class="backdrop">
       <div class="first-class" class:Modal={isModal}>
-       <p><strong>Foo is the real hero !</strong></p>
+       <p><strong>{message}</strong></p>
       </div>
     </div>
     {/if}
@@ -21,7 +22,7 @@
         font-size: large;
     }
     .Modal {
-        background-color: red;
+        background-color: crimson;
         border-radius: 10px;
         margin: auto;
         padding: 1rem;
