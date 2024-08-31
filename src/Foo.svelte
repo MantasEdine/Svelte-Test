@@ -1,16 +1,20 @@
 <script>
     let Foo = true;
+    let isModal = true;
 </script>
 <main>
     {#if Foo}
     <div class="backdrop">
-      <div class="Modal">
+      <div class="first-class" class:Modal={isModal}>
        <p><strong>Foo is the real hero !</strong></p>
       </div>
     </div>
     {/if}
 </main>
 <style>
+    .first-class {
+        background-color: antiquewhite;
+    }
     p {
         color: deepskyblue;
         font-family: monospace;
