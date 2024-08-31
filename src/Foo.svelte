@@ -1,5 +1,5 @@
 <script>
-    export const message = "default Value";
+    export let message = "default Value";
     let Foo = true;
     let isModal = true;
 </script>
