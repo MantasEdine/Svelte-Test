@@ -1,4 +1,5 @@
 <script>
+   import Foo from "./Foo.svelte";
  let people = [
     { name: 'John', surname : 'Michael', age: 25, id : 1 },
     { name: 'Karl', surname : 'Max', age: 26, id : 2 },
@@ -15,6 +16,7 @@
    
    </script>
    
+<Foo/>
    <main>
     {#if people.length >= 3}
      <div class="container">
